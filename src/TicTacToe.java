@@ -137,6 +137,7 @@ public class TicTacToe {
 		winning.add(cross1);
 		winning.add(cross2);
 		
+		//Comparing the moves the player/CPU has made to the win conditions
 		for(List l : winning) {
 			if(playerPositions.containsAll(l)) {
 				return "Congratulations you won!";
